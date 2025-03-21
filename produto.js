@@ -1,3 +1,4 @@
+//model
 const Sequelize = require('sequelize');
 const database = require('./db');
 const Produto = database.define('produto', {
@@ -14,6 +15,6 @@ const Produto = database.define('produto', {
     preco: {
         type: Sequelize.DOUBLE
     },
-    descicao: Sequelize.STRING
+    descricao: Sequelize.STRING
 })
 module.exports = Produto;
